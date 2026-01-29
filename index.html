@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Recursos e Inteligência Artificial</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --accent: #3b82f6;
+            --label-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            border-left: 6px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            font-size: 1.6rem;
+            color: var(--text-main);
+        }
+
+        /* Grid de Formulários e Manuais */
+        .link-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 12px;
+        }
+
+        .link-item {
+            background: var(--card-bg);
+            padding: 14px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+            font-size: 0.95rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: all 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+
+        .link-item:hover {
+            transform: translateX(5px);
+            border-color: var(--accent);
+            color: var(--primary-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* Grid de IAs - Novo Layout de Cards */
+        .ia-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .ia-card {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .ia-header {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+
+        .ia-name {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+        }
+
+        .ia-info-row {
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+
+        .ia-label {
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .ia-value {
+            color: var(--text-main);
+            display: block;
+        }
+
+        .ia-desc {
+            font-size: 0.9rem;
+            color: #475569;
+            margin-top: 10px;
+            padding: 10px;
+            background: var(--label-bg);
+            border-radius: 6px;
+            flex-grow: 1;
+        }
+
+        .btn-ia {
+            margin-top: 20px;
+            display: block;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-align: center;
+            transition: background 0.2s;
+        }
+
+        .btn-ia:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 600px) {
+            .ia-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Central de Recursos e Inteligência Artificial</h1>
+        <p>Acesse formulários, sistemas de IA e documentações técnicas.</p>
+    </header>
+
+    <section>
+        <h2>Ecossistema de IAs</h2>
+        <div class="ia-grid">
+            
+            <div class="ia-card">
+                <div class="ia-header">
+                    <span class="ia-name">Ares AI</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Fonte</span>
+                    <span class="ia-value">Código fonte + BD</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Setores / Impacto</span>
+                    <span class="ia-value">Desenvolvimento / Conhecimento, Agilizador</span>
+                </div>
+                <p class="ia-desc">Auxiliar o setor de desenvolvimento para pesquisas e entendimento do código de maneira facilitada</p>
+                <a href="https://notebooklm.google.com/notebook/57c7ca7c-0a0e-44be-80d6-8fce36d883d6" class="btn-ia" target="_blank">Acessar IA</a>
+            </div>
+
+            <div class="ia-card">
+                <div class="ia-header">
+                    <span class="ia-name">Atena AI</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Fonte / Setores</span>
+                    <span class="ia-value">Runrun IT / Analise</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Impacto</span>
+                    <span class="ia-value">Analise, Agilizador</span>
+                </div>
+                <p class="ia-desc">Auxiliar o setor de analise a tomada de decisão, documentação, agrupamento de tarefas.</p>
+                <a href="https://notebooklm.google.com/notebook/7166ee34-a4fd-449d-a8b7-c9806d05afd3" class="btn-ia" target="_blank">Acessar IA</a>
+            </div>
+
+            <div class="ia-card">
+                <div class="ia-header">
+                    <span class="ia-name">Atlas AI</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Fonte / Setores</span>
+                    <span class="ia-value">Runrun IT + Zendesk + Elastic / CS</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Impacto</span>
+                    <span class="ia-value">Analise, Tomada de Decisão</span>
+                </div>
+                <p class="ia-desc">Auxiliar o setor de CS agrupando todas as informações dos clientes em apenas um lugar.</p>
+                <a href="https://notebooklm.google.com/notebook/5c59d77a-0bb1-4c0f-8941-83d91bf346c9" class="btn-ia" target="_blank">Acessar IA</a>
+            </div>
+
+            <div class="ia-card">
+                <div class="ia-header">
+                    <span class="ia-name">Base de Conhecimento</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Fonte / Setores</span>
+                    <span class="ia-value">Melhorias + Base / Todos os setores</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Impacto</span>
+                    <span class="ia-value">Conhecimento, Analise, Agilizador</span>
+                </div>
+                <p class="ia-desc">Base de conhecimento teórico sobre o ERP.</p>
+                <a href="https://notebooklm.google.com/notebook/974ee014-e33e-4240-bdd7-0363f263a00d" class="btn-ia" target="_blank">Acessar IA</a>
+            </div>
+
+            <div class="ia-card">
+                <div class="ia-header">
+                    <span class="ia-name">Hefesto AI</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Fonte / Setores</span>
+                    <span class="ia-value">Runrun IT / Sustentação + Analise</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Impacto</span>
+                    <span class="ia-value">Analise, Agilizador</span>
+                </div>
+                <p class="ia-desc">Auxiliar o setor de sustentação nas analises de causa raiz e agrupamento de tarefas.</p>
+                <a href="https://notebooklm.google.com/notebook/d7c72391-9cdd-40b7-970e-f9d874b08a6a" class="btn-ia" target="_blank">Acessar IA</a>
+            </div>
+
+            <div class="ia-card">
+                <div class="ia-header">
+                    <span class="ia-name">Hermes AI</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Fonte / Setor / Impacto</span>
+                    <span class="ia-value">Zendesk / Suporte / Analise</span>
+                </div>
+                <p class="ia-desc">Auxiliar o lider de suporte e Product owner para tomada de decisões.</p>
+                <a href="https://notebooklm.google.com/notebook/cd3bc174-e5e3-4743-b66f-fa64aa4f5ba8" class="btn-ia" target="_blank">Acessar IA</a>
+            </div>
+
+            <div class="ia-card">
+                <div class="ia-header">
+                    <span class="ia-name">Janus AI</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Fonte / Setores</span>
+                    <span class="ia-value">Código fonte + BD / Qualidade + Analise</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Impacto</span>
+                    <span class="ia-value">Conhecimento, Analise, Documentação</span>
+                </div>
+                <p class="ia-desc">Auxiliar os setores de analise e qualidade a interpretar o código fonte a fim de sanar duvidas.</p>
+                <a href="https://notebooklm.google.com/notebook/eee391dd-5c5f-4998-ae1e-83adfc6a68aa" class="btn-ia" target="_blank">Acessar IA</a>
+            </div>
+
+            <div class="ia-card">
+                <div class="ia-header">
+                    <span class="ia-name">Prometeu AI</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Fonte / Setores</span>
+                    <span class="ia-value">Código fonte + BD / Suporte, CS, Implantação</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Impacto</span>
+                    <span class="ia-value">Conhecimento, FAQ</span>
+                </div>
+                <p class="ia-desc">Consultar dúvidas técnicas e gerar FAQs através da leitura do código fonte.</p>
+                <a href="https://notebooklm.google.com/notebook/57b70f71-7848-4ce8-bb1f-d34d698d4721" class="btn-ia" target="_blank">Acessar IA</a>
+            </div>
+
+            <div class="ia-card">
+                <div class="ia-header">
+                    <span class="ia-name">Themis AI</span>
+                </div>
+                <div class="ia-info-row">
+                    <span class="ia-label">Fonte / Setor / Impacto</span>
+                    <span class="ia-value">Runrun IT / Analise / Tomada de Decisão</span>
+                </div>
+                <p class="ia-desc">Auxiliar o setor de analise a tomada de decisão de aprovações de tarefas em cima da cultura da empresa.</p>
+                <a href="https://notebooklm.google.com/notebook/f30dd4f3-d66d-4996-8a36-8e323abcfedf" class="btn-ia" target="_blank">Acessar IA</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Links de Formulários</h2>
+        <div class="link-list">
+            <a href="https://runrun.it/share/form/Mfw854onC8A0eB1e" class="link-item" target="_blank">📄 Suporte</a>
+            <a href="https://runrun.it/share/form/_2j55vUcxTPSK6s_" class="link-item" target="_blank">⚙️ Infraestrutura</a>
+            <a href="https://runrun.it/share/form/_2j55vUcxTPSK6s_" class="link-item" target="_blank">🚀 Implantação (Cliente Novo)</a>
+            <a href="https://runrun.it/share/form/vaGij0XlJUGIwtII" class="link-item" target="_blank">🎓 Implantação (Treinamento)</a>
+            <a href="https://runrun.it/share/form/qiPjbyvS14ol_YtM" class="link-item" target="_blank">🔄 Processos (Scrum Master)</a>
+            <a href="https://runrun.it/share/form/YwKLvR_HKQ7CaolQ" class="link-item" target="_blank">🤝 Sucesso do Cliente</a>
+            <a href="https://runrun.it/share/form/MCj9_ONnIPS9F9Tb" class="link-item" target="_blank">🛠️ Sustentação</a>
+            <a href="https://runrun.it/share/form/wBXskjWYF-lpZbAY" class="link-item" target="_blank">💡 Sugestão de Cliente</a>
+            <a href="https://runrun.it/share/form/taq4JBk1CWMj9O-T" class="link-item" target="_blank">💡 Sugestão Interna</a>
+            <a href="https://runrun.it/share/form/8Mxs427dmEbaLyiI" class="link-item" target="_blank">❓ Criação de FAQ</a>
+            <a href="https://runrun.it/share/form/K5vkkQJdwI2YoTas" class="link-item" target="_blank">💰 Financeiro</a>
+            <a href="https://runrun.it/share/form/_pe67KZgsv5d5-eZ" class="link-item" target="_blank">✅ Verificação do Teste</a>
+            <a href="https://runrun.it/share/form/EeWn1nKBz1dwqW7r" class="link-item" target="_blank">📊 Análise de Aderência</a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Manuais</h2>
+        <div class="link-list">
+            <a href="https://diegofallabkp.github.io/manual-direcionamento/" class="link-item" target="_blank">📖 Manual de Direcionamento</a>
+            <a href="https://diegofallabkp.github.io/calculadora-valores/" class="link-item" target="_blank">🧮 Calculadora de Valores</a>
+            <a href="https://diegofallabkp.github.io/calculadora-urgencia/" class="link-item" target="_blank">⚠️ Calculadora de Urgência</a>
+            <a href="https://diegofallabkp.github.io/calculadora-comissao/" class="link-item" target="_blank">💸 Calculadora de Comissão</a>
+            <a href="https://diegofallabkp.github.io/manual-objecoes/" class="link-item" target="_blank">🛡️ Manual de Objeções</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Atualizado em 2026 | Sistema de Apoio Interno</p>
+    </footer>
+</div>
+
+</body>
+</html>
